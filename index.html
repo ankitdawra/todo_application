@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html data-ng-app="app" data-ng-controller="BaseCtrl">
+    <head>
+        <title>Company</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="icon" href="./img/logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="all" type="text/css" href="css/lib/bootstrap.min.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="css/custom-responsive.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="css/lib/datetimepicker.css" />
+    </head>
+
+    <body>
+        <header class="fixedHeader" data-ng-include data-src="'modules/header.html'"></header>
+
+        <section>
+                <div class="section">
+                    <div data-ng-include data-src="'modules/sidebar.html'"></div>
+                    <div data-ui-view></div>
+                </div>
+        </section>
+
+        <!-- <div class="footer" data-ng-include data-src="'modules/footer.html'"></div> -->
+    
+	    <footer>
+	        <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	        <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+
+	        <script type="text/javascript" src="js/lib/angular.min.js"></script>
+            <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
+            <script type="text/javascript" src="js/lib/angular-ui-route.min.js"></script>
+
+            <script type="text/javascript" src="js/lib/moment.js"></script>
+            <script type="text/javascript" src="js/lib/datetimepicker.js"></script>
+            <script type="text/javascript" src="js/lib/datetimepicker.templates.js"></script>
+	
+	        <script>var App = angular.module('app', ['ngRoute','ui.router','ui.bootstrap.datetimepicker']);</script>
+
+            <script src="js/controllers/BaseCtrl.js"></script>
+	        <script src="js/controllers/HomeCtrl.js"></script>
+            <script src="js/route.js"></script>
+            <script src="js/services.js"></script>
+            
+	    </footer>
+	</body>    
+</html>

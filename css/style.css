@@ -1,0 +1,99 @@
+body{font-size: 12px;background-color: rgba(234, 234, 234, 0.28);font-family: 'Roboto-Regular-Font';}
+
+.alignInMiddle{position: absolute !important; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+
+.header-wrap{height: 1200px;height: 95vh;position: relative; color: #FFF;max-width: 100%; overflow: hidden;}
+.header-wrap .header{position: fixed; top: 0px; width: 100%; overflow: hidden; color: #FFF;height: 1200px;height: 95vh; background: url(https://www.imore.com/sites/imore.com/files/styles/larger_wm_brw/public/field/image/2014/06/todo_mac_apps_best_apps_hero.jpg?itok=VwUwH3Oh); background-size: cover; -webkit-filter: blur(0.6px); background-position: 50% 50%;}
+
+.header-wrap .header-overlay{position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; background: rgba(0, 0, 0, 0.3);}
+.header-wrap .header-data{font-family: 'Roboto-Thin-Font';position: relative;width: 60%; margin: auto; height: 100%; text-align: center;}
+.header-wrap .header-data .data-wrap{position: absolute; left: 50%; top: 40%; transform: translate(-50%,-50%); width: 100%;}
+.header-wrap .header-data .data-wrap .heading{font-size: 4.5vmax;}
+.header-wrap .header-data .data-wrap .task-input{margin-top: 10%;}
+.header-wrap .header-data .data-wrap .task-input input{width: 80%; padding: 10px 20px 10px 60px; display: inline-block; border: none; color: #000; font-weight: bold; font-size: 15px; letter-spacing: .7px; word-spacing: .5px; border-radius: 3px; box-shadow: 0 0 5px #000;}
+
+.header-wrap .header-data .data-wrap .task-input form{position: relative;}
+.header-wrap .header-data .data-wrap .task-input form .calendar-wrap{display: inline-block; height: 100%;color: gray; background: rgba(53, 54, 46, 0.13); width: 50px; position: absolute; font-family:'Roboto-Regular-font';}
+.header-wrap .header-data .data-wrap .task-input form .calendar-wrap .calendar-toggle{position: relative;width: 100%;height: 100%;}
+.header-wrap .header-data .data-wrap .task-input form .calendar-wrap .calendar-toggle i{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);font-size: 15px;}
+
+
+.header-wrap .header-data .view-tasks{position: absolute; bottom: 0px; width: 100%; font-size: 15px; text-transform: capitalize; letter-spacing: 1px; padding: 20px 10px; font-family: 'Roboto-Regular-font';}
+.header-wrap .header-data .view-tasks .task-btn-container{display: inline-block; padding: 10px 30px; background: rgba(63, 65, 57, 0.3); cursor: pointer; box-shadow: 0 0 2px rgb(158, 158, 158);}
+.header-wrap .header-data .view-tasks .task-btn-container i{margin-left: 4px;}
+
+section{background: #FFF; position: relative;}
+
+.main-wrap{padding: 150px 0; width: 60%; margin: auto;}
+.main-wrap .todo-wrap{background: rgba(204, 204, 204, 0.07); box-shadow: 0 0 1px rgba(0, 0, 0, 0.38); padding: 10px;}
+.main-wrap .todo-wrap .heading{text-align: center; font-size: 2vmax; text-transform: capitalize; padding-bottom: 15px; margin-bottom: 30px; letter-spacing: 1px; font-family: Roboto-Medium-Font;}
+.main-wrap .todo-wrap .todos-div{width: 90%; margin: auto;}
+.main-wrap .todo-wrap .todos-div .todo-ele{padding: 10px 20px; font-size: 13px; border-bottom: 1px solid rgba(234, 234, 234, 0.38);position: relative;}
+.main-wrap .todo-wrap .todos-div .todo-ele .index{position: absolute; left: 0px; margin-right: 10px;font-weight: bold;} 
+.main-wrap .todo-wrap .todos-div .todo-ele .name{word-break: break-word; display: block;}
+.main-wrap .todo-wrap .todos-div .todo-ele .name .time{color: rgba(0, 0, 0, 0.42); font-size: 11px; margin: 5px 0;}
+
+.main-wrap .todo-wrap .todos-div .todo-ele .name form{width: 90%;}
+.main-wrap .todo-wrap .todos-div .todo-ele .name form input{width: 100%;border:none;box-shadow: rgba(0, 0, 0, 0.368627) 0px 0px 1px; outline: none;padding: 5px 10px;}
+.main-wrap .todo-wrap .todos-div .todo-ele .name form input:focus{box-shadow: rgb(0, 0, 0) 0px 0px 2px;}
+input[name=todoText]{
+  resize: none;
+}
+
+.main-wrap .todo-wrap .todos-div .todo-ele .seperator{margin: 0 10px;}
+.main-wrap .todo-wrap .todos-div .todo-ele .delete{position: absolute; right: 0px; top: 10px; font-size: 15px; cursor: pointer;}
+.main-wrap .todo-wrap .todos-div .empty-label{font-size: 20px; text-align: center; letter-spacing: 1px;}
+
+
+
+@font-face {
+    font-family: 'Roboto-Regular-Font';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium-Font';
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Thin-Font';
+    src: url('../fonts/Roboto-Thin.ttf');
+}
+
+::-webkit-input-placeholder {
+    color:darkgray;
+}
+:-moz-placeholder {
+   color:darkgray;
+   opacity:  1;
+}
+::-moz-placeholder {
+   color:darkgray;
+   opacity:  1;
+}
+:-ms-input-placeholder {
+   color:darkgray;
+}
+::-ms-input-placeholder {
+   color:darkgray;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  border-width: 0
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #FFF;
+  box-shadow: inset 1px 1px 0 rgba(220, 172, 0, .1), inset 0 -1px 0 rgba(220, 172, 0, .07);
+}
+::-webkit-scrollbar-thumb:vertical {
+  background-color: grey;
+  box-shadow: inset 1px 1px 0 rgba(220, 172, 0, .1), inset 0 -1px 0 rgba(220, 172, 0, .07);
+}
+
+

@@ -1,0 +1,21 @@
+<div class="main-wrap" id="main-wrap">
+	<div class="todo-wrap" ng-click="doneEditing(false)">
+		<div class="heading">todo list</div>
+		<div class="todos-div">
+			<div class="todo-ele" data-ng-repeat="todo in todos track by $index">
+				<span class="index">{{$index + 1}}.</span>
+				<div class="name">
+					<span ng-dblclick="$event.stopPropagation(); editTodo(todo);" ng-show="!todo.editing">{{todo.name}}</span>
+					<form ng-submit="doneEditing(todo, $index)" ng-show="todo.editing">
+			            <input ng-model="todo.name" name="todoText" ng-click="$event.stopPropagation();"/>
+			        </form>
+					<div class="time">dated {{todo.time*1000 | date}}</div>
+				</div>
+				<span class="delete" data-ng-click="delete($index)"><i class="fa fa-trash" aria-hidden="true"></i></span>
+			</div>
+			<div class="empty-label" data-ng-if="!todos.length">
+				Empty, scroll up to add todo :(
+			</div>
+		</div>
+	</div>
+</div>

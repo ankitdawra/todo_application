@@ -1,0 +1,8 @@
+@media(max-width: 768px){
+	.sidebar{display: none;}
+	.main-container{margin: 20px auto;}
+
+	.header-wrap .header-data{width: 100%;}
+
+	.main-wrap{padding: 100px 0; width: 90%;}
+}

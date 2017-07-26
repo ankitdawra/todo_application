@@ -1,0 +1,30 @@
+<div class="header-wrap">
+	 <div class="header"></div>
+	 <div class="header-overlay"></div>
+	 <div class="header-data">
+	 	<div class="data-wrap">
+		 	<div class="heading">What needs to be done?</div>
+		 	<div class="task-input">
+		 		<form ng-submit="addTodo($root.task, $root.date)">
+			 		<div class="calendar-wrap dropdown">
+		 			    <div class="calendar-toggle dropdown-toggle" id="dropdown1" role="button" data-toggle="dropdown" data-target="#" href="#">
+		 			    	<i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+		 			    </div>
+		 			    <ul class="dropdown-menu" role="menu">
+					        <datetimepicker data-ng-model="$root.date" data-datetimepicker-config="{ dropdownSelector: '#dropdown1', minView:'day'}" min-date=startDate />
+					    </ul>
+		 			</div>
+			 		<input type="text" placeholder="Write your task here" data-ng-model="$root.task"/>
+				</form>
+		 	</div>
+		</div>
+		 			{{error}}
+	 	<div class="view-tasks">
+	 		<div class="task-btn-container" data-ng-click="scrollToDiv('#main-wrap')">
+	 			<span>View all</span> 
+	 			<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+	 		</div>
+	 	</div>
+
+	 </div>
+</div>
